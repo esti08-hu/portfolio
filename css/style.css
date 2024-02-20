@@ -221,6 +221,9 @@ h4 {
   text-align: center;
 }
 
+.about-content p{
+  width: 70%;
+}
 .services {
   display: flex;
   justify-content: center;
@@ -247,29 +250,37 @@ h4 {
   justify-content: center;
   flex-wrap: wrap;
 }
-i {
+.services-box i {
   margin-top: 1rem;
   margin-bottom: 0.9rem;
   font-size: 2.4rem;
+  color: var(--secondary-color);
+  margin-top: 1rem;
 }
 
-.services-box i {
-  color: var(--secondary-color);
-}
+
+
 .services-box {
   background-color: #333;
+  position: relative;
+}
+
+.services-box .service-head{
+  position: relative;
+  width: 100%;
+  top: 10px;
 }
 
 .services .services-box {
   display: flex;
   align-items: center;
   border-radius: 2rem;
-  justify-content: center;
   flex-direction: column;
   box-shadow: 0.1px 0px 2px;
   padding: 0.3rem;
   text-align: center;
   width: 70%;
+  height: 330px;
   margin: 20px;
   border-top: 0.4rem solid var(--secondary-color);
   border-bottom: 0.4rem solid var(--secondary-color);
@@ -279,6 +290,17 @@ i {
   box-shadow: 0.1px 0px 5px;
   transform: scale(1.1);
 }
+
+.service-text {
+  height: 0;
+  overflow: hidden;
+  transition:height 0.3s ease;
+}
+
+.service-text.active {
+  height: 500px;
+}
+
 
 /* Portfolio section */
 
@@ -520,6 +542,7 @@ i {
 
 .contact form .btn {
   margin-top: 2rem;
+  transition: all 0.4s ease;
 }
 
 /* Footer section */
