@@ -51,6 +51,10 @@ body {
   transition: all 0.5s ease;
 }
 
+.menu-bar{
+  display: none;
+}
+
 .nav-bar {
   display: flex;
   align-items: center;
@@ -487,11 +491,15 @@ h4 {
   width: 60%;
   padding: 1.5rem;
   font-size: 1rem;
-  color: #333;
   border-radius: 0.8rem;
   margin: 0.7rem 0;
   box-shadow: 0 0.05rem 0.1rem var(--primary-color);
   border: none;
+  background-color: black;
+  color: white;
+  border: 1px solid var(--primary-color);
+  font-size: large;
+  font-weight: bold;
 }
 
 .links {
@@ -542,6 +550,7 @@ h4 {
 .contact form .btn {
   margin-top: 2rem;
   transition: all 0.4s ease;
+  font-weight: bolder;
 }
 
 /* Footer section */
@@ -636,6 +645,40 @@ h4 {
 @media (max-width: 648px) {
   html {
     font-size: 70%;
+  }
+  .header{
+    display: none;
+  }
+
+  .menu-bar{
+    position: fixed;
+    z-index: 200;
+    width: 200px;
+    height:350px;
+    background-color: #f9004d;
+    display: block;
+    
+    a{
+      text-decoration: none;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: larger;
+      font-weight: bold;
+    }
+    .toggle img{
+      width: 20px;
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .menu-bar-links{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
   }
 
   .home {
