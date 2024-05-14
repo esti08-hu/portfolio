@@ -7,6 +7,7 @@
 }
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 :root {
   --primary-color: #fff;
@@ -23,6 +24,7 @@ body {
   margin-bottom: 2rem;
   background-image: url(../images/bg2.jpg);
   background-position: center;
+  transform: rotate(10deg);
   background-size: cover;
 }
 
@@ -97,6 +99,8 @@ span {
   top: 50%;
   left: 8%;
   width: 30%;
+  transform: rotate(-11deg);
+  bottom:-10
 }
 
 h1 {
